@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>baidu</title>
+  <link rel="icon" type="image/x-icon" href="./style/images/女仆.png" />
+  <link rel="stylesheet" href="./style/css/base.css">
+  <link rel="stylesheet" href="./style/css//index.css">
+  <style></style>
+</head>
+
+<body>
+  <div class="container">
+    <input type="text" class="text">
+    <div class="btn">搜索</div>
+  </div>
+  <script>
+    const input = document.querySelector(".text")
+    const button = document.querySelector(".btn")
+
+    function click_fn() {
+      const content = input.value.trim().replace(/" "/g, "+")
+      if (content === "") {
+        return
+      } else {
+        window.open("https://www.baidu.com/s?wd=" + content)
+      }
+    }
+
+    function keydown_fn(e) {
+      if (e.keyCode === 13) {
+        click_fn()
+      }
+    }
+
+    button.addEventListener("click", click_fn)
+    input.addEventListener("keydown", keydown_fn)
+  </script>
+</body>
+
+</html>

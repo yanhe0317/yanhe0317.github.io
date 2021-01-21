@@ -1,0 +1,31 @@
+body {
+  background-color: #eee;
+}
+body .container {
+  width: 100%;
+  margin: 270px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container .text {
+  height: 40px;
+  width: 500px;
+  border: 2px solid #66ccff;
+  border-radius: 0;
+  padding: 0 20px;
+  color: #66ccff;
+  font-size: 14px;
+}
+body .container .text:focus {
+  outline: none;
+}
+body .container .btn {
+  width: 100px;
+  height: 40px;
+  background-color: #66ccff;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
